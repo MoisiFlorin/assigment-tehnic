@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Assignment tehnic</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <form action="#" method="post" id="frmMyform">
+        <select name="selMyList" onchange="showHide(this)">
+            <option value="0">Select an option</option>
+            <option value="1">Sum of Two</option>
+            <option value="2">Max of Three</option>
+            <option value="3">Prime Number</option>
+            <option value="4">Reverse String</option>
+        </select>
+
+        <div id="div1">
+            <h2>Sum of Two</h2><br>
+            Enter number 1: <input type="number" id="number1" name="number1" value=""/>
+            Enter number 2: <input type="number" id="number2" name="number2" value=""/>
+            <input type="button" name="Sumbit" value="Submit" onclick="sum()" />
+            The sum = <input type="text" id="answer_sum" name="answer" value="" readonly/>
+        </div>
+
+        <div id="div2">
+            <h2>Max of three</h2><br>
+            Enter number 1: <input type="number" id="numberMax1" name="numberMax1" value=""><br>
+            Enter number 2: <input type="number" id="numberMax2" name="numberMax2" value=""><br>
+            Enter number 3: <input type="number" id="numberMax3" name="numberMax3" value=""><br>
+            <input type="button" value="Submit" onclick="maxOf()"><br>
+            The max number = <input type="text" id="answer_max" name="answer_max" value="" readonly/>
+        </div>
+
+        <div id="div3">
+            <h2>Prime number test</h2>
+            Enter number: <input type="number" id="numberPrime" name="numberPrime" value="">
+            <input type="button" value="Submit" onclick="isPrime()">
+            <p id="answer_prime"></p>
+        </div>
+
+        <div id="div4">
+            <h2>Reversed string</h2>
+            Enter string: <input type="text" id="word_rev">
+            <input type="button" value="Submit" onclick="reversed()">
+            <p id="answer_reverse"></p>
+        </div>
+
+    </form>
+
+
+    <script src="script.js"></script>
+</body></html>
